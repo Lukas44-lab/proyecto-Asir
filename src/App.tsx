@@ -1,4 +1,5 @@
 import './App.css'
+import ZonaComentarios from './components/ZonaComentarios'
 import ZonaContacto from './components/ZonaContacto'
 import ZonaFooter from './components/ZonaFooter'
 import ZonaHeader from './components/ZonaHeader'
@@ -13,6 +14,7 @@ function App() {
       <ZonaHeader/>
       <ZonaSobreNosotros/>
       <ZonaMenu/>
+      <ZonaComentarios/>
       <ZonaContacto/>
       <ZonaFooter/>
     </div>
