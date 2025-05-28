@@ -1,5 +1,6 @@
 import './App.css'
 import ZonaHeader from './components/ZonaHeader'
+import ZonaMenu from './components/ZonaMenu'
 import ZonaSobreNosotros from './components/ZonaSobreNosotros'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <ZonaHeader/>
       <ZonaSobreNosotros/>
+      <ZonaMenu/>
     </div>
   )
 }
