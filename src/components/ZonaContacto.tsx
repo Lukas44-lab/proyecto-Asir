@@ -21,7 +21,7 @@ const ZonaContacto = () => {
         <div className="text-center mt-5">
           <p>📍 Calle de Esparteros 11, Madrid, España</p>
           <p>📞 +34 915 319 728</p>
-          <p>📧 cafeAromas@gmail.com</p>
+          <p>📧 cafeteriaEsparteros11@gmail.com</p>
         </div>
       </div>
     </section>

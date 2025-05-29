@@ -17,8 +17,8 @@ function App() {
       <ZonaSobreNosotros/>
       <ZonaGaleria/>
       <ZonaMenu/>
-      <ZonaResenas/>
       <ZonaContacto/>
+      <ZonaResenas/>
       <ZonaFooter/>
     </div>
   )
