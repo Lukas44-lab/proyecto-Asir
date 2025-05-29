@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 type Props = {
-  onNuevaReseña: () => void;
+  onNuevaResena: () => void;
 };
 
-const FormularioReseña = ({ onNuevaReseña }: Props) => {
+const FormularioResena = ({ onNuevaResena }: Props) => {
   const [nombre, setNombre] = useState("");
   const [texto, setTexto] = useState("");
   const [estrellas, setEstrellas] = useState(5);
@@ -25,7 +25,7 @@ const FormularioReseña = ({ onNuevaReseña }: Props) => {
         setNombre("");
         setTexto("");
         setEstrellas(5);
-        onNuevaReseña(); // recarga lista
+        onNuevaResena(); // recarga lista
       } else {
         alert("Error al enviar reseña");
       }
@@ -65,4 +65,4 @@ const FormularioReseña = ({ onNuevaReseña }: Props) => {
   );
 };
 
-export default FormularioReseña;
+export default FormularioResena;

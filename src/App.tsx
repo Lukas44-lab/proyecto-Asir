@@ -5,6 +5,7 @@ import ZonaFooter from './components/ZonaFooter'
 import ZonaGaleria from './components/ZonaGaleria'
 import ZonaHeader from './components/ZonaHeader'
 import ZonaMenu from './components/ZonaMenu'
+import ZonaResenas from './components/ZonaReseña'
 import ZonaSobreNosotros from './components/ZonaSobreNosotros'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <ZonaSobreNosotros/>
       <ZonaGaleria/>
       <ZonaMenu/>
-      <ZonaComentarios/>
+      <ZonaResenas/>
       <ZonaContacto/>
       <ZonaFooter/>
     </div>
