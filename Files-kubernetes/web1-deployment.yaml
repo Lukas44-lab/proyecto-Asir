@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web1
+  template:
+    metadata:
+      labels:
+        app: web1
+    spec:
+      containers:
+        - name: web1
+          image: lukas44/reactv9:1
+          ports:
+            - containerPort: 80
+          env:
+            - name: VITE_API_URL
+              value: http://api:5000
