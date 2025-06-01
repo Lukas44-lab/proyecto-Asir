@@ -15,7 +15,7 @@ const FormularioResena = ({ onNuevaResena }: Props) => {
     const nueva = { nombre, texto, estrellas };
 
     try {
-      const res = await fetch("http://localhost:5000/api/resenas", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/resenas`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(nueva),

@@ -14,7 +14,7 @@ const ZonaResenas = () => {
 
   const cargarResenas = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/resenas?orden=${orden}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/resenas?orden=${orden}`);
       const data = await res.json();
       setResenas(data);
     } catch (err) {
@@ -30,12 +30,12 @@ const ZonaResenas = () => {
     <section className="container my-5">
             <h2 className="mb-4">¡Déjanos tu reseña!</h2>
 
-      {/* ⬇️ Formulario con función de recarga */}
+      {/*  formulario con función de recarga */}
       <FormularioResena onNuevaResena={cargarResenas} />
       <h2 className="mb-4">Reseñas de Clientes</h2>
 
 
-      {/* 🔃 Filtro */}
+      {/* parte de filtro */}
       <select
         className="form-select my-3 w-auto"
         value={orden}
@@ -45,7 +45,7 @@ const ZonaResenas = () => {
         <option value="puntuacion">Mejor puntuadas</option>
       </select>
 
-      {/* 🧾 Lista de reseñas */}
+      {/* lista de reseñas */}
       <div className="resenas-box"
       style={{
         maxHeight: "400px",
